@@ -9,3 +9,9 @@ jobs:
     steps:
       - name: Mostrar mensjae
         run: echo "Hola"
+
+      - name: Bajar codigo
+        uses: actions/checkout@v5
+
+      - name: Probar codigo
+        run: pyhton3 main.py
